@@ -6,9 +6,20 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+span{
+  white-space: nowrap
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+form{
+  padding: 17px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 * {
@@ -17,10 +28,10 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    
   }
   body {
     color: white;
-    background: black;
+    background: rgb(255, 255, 255);
   }
 }

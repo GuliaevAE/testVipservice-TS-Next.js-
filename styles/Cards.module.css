@@ -1,0 +1,193 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  margin: 50px;
+
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_logo {
+  margin-top: 20px;
+}
+
+.card_content_availableTime {
+  color: black;
+  display: flex;
+  margin: 0 40px;
+  margin-bottom: 25px;
+
+}
+
+.card_content_availableTime_item {
+  margin-right: 15px;
+  padding: 5px 10px;
+  background: #FFFFFF;
+  box-shadow: 0 0 2px 0 #949599;
+  border-radius: 10px;
+  color: #5C5C5C;
+}
+
+.selected {
+  box-shadow: none;
+  background: #DDE3EE;
+  color: black
+}
+
+.smallText {
+  font-size: 12px;
+}
+
+.card_status {
+  background: #8BA5D8;
+  border-radius: 15px 0px;
+  padding: 5px 10px;
+  width: auto;
+  font-size: 12px;
+  align-self: start;
+}
+
+
+.card_logoairplane {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.card_logoairplane span {
+  font-size: 18px;
+  color: #5C5C5C;
+}
+
+.card_info {
+  display: flex;
+  margin: 15px;
+}
+
+.card_info_time {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+
+.line {
+  margin-top: 10px;
+  height: 1px;
+  background: #B7BAC1;
+  width: 269px;
+  position: relative;
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #B7BAC1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+
+}
+
+
+.line::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #B7BAC1;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+
+
+.card_info_cityAndDate {
+  display: flex;
+  flex-direction: column;
+  color: #5C5C5C;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 25px;
+  white-space: nowrap;
+  min-width: 80px
+}
+
+.card_info_path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.card_info_path span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #B7BAC1;
+  width: auto;
+}
+
+.svoANDrow {
+  display: flex;
+  justify-content: space-between;
+  width: 104%;
+
+}
+
+.svoANDrow span {
+  font-weight: 400;
+  font-size: 16px;
+  
+}
+
+.card_info_icons {
+  height: 100%;
+  margin-top: 10px;
+
+}
+
+
+.card_price {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: -1px 0 0 0 #DDE3EE
+}
+
+.card_price span::after {
+  content: '₽'
+}
+
